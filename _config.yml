@@ -1,0 +1,33 @@
+# Site settings for Babanetworx
+title: Babanetworx
+email: contact@babanetworx.com
+description: >-
+  Babanetworx provides innovative software solutions, data engineering services, 
+  and cutting-edge AI products to help businesses transform and grow.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: babanetworx
+github_username:  babanetworx
+linkedin_username: babanetworx
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  services:
+    output: true
+    permalink: /:collection/:name/
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .gitignore
+  - pyproject.toml
